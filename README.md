@@ -1,7 +1,7 @@
 # Encriptador_AluraChallenge
 Challenge ONE Beginner in programming: Building a text encryptor with Javascript.
 
-https://raw.githubusercontent.com/dannoo/Encriptador_AluraChallenge/master/Challenge_insignia.png
+
 
 Desarrolo de aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
