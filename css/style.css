@@ -1,0 +1,490 @@
+header{
+    display: block;
+    background: linear-gradient(rgba(1, 255, 1, 0.186),black)
+}
+header h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #50e112;
+}
+
+.titulo{
+    margin: auto;
+    display: table;
+}
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #000000;
+    border-left: 3px solid #35fb04;
+
+    animation: maquina 4.5s infinite alternate steps(42);
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+body{
+    font-family: 'Red Rose', sans-serif;                             
+    background-color: #000000;
+    opacity: 1;
+    background-image: linear-gradient(#000000 1px, transparent 9px), radial-gradient(#0cff00 0.1px, #000000 0.1px);
+    background-size: 18px 18px;
+    background-position: 0 0,9px 9px;
+    width: 100%;
+    height: 100%;
+}
+.logoAl{
+    position: relative;
+    margin-left: 40px;
+    padding: 1%;
+    width: 2%;
+    height: 100%;
+}
+.logoOr{
+    position: relative;
+    width: 10%;
+    top: 10px;
+}
+
+.logoCha{
+    position: relative;
+    width: 15%;
+    left: 62%;
+}
+
+main{
+    font-family: 'Red Rose', sans-serif;
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    margin: 2% 0;
+
+}
+
+.input{
+    width: 50%;
+}
+
+.areatexto{
+    border-style: line;
+    border-color: #47e006;
+    border-width: bold;
+    color: rgb(4, 141, 18);
+    margin: 40px 50px 0 0;
+    text-transform: lowercase;
+    background-color:#13ff0735;
+    border-radius: 10px;
+    box-shadow: inset 4px 2px 10px -2px  #01ff01b7, inset -4px -2px 10px #01ff01b7, 4px -4px 5px rgb(43, 255, 0), 
+                     -4px 2px 10px   #01ff01b7, 4px -2px 10px  #01ff01b7, -4px 4px 5px rgb(43, 255, 0);
+    resize: none;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 20px;
+    width: 100%;
+    margin: 0 5% 0 10%;
+}
+
+::placeholder{ color: #47e006;}
+    .areatexto:focus{
+        outline: none;
+}
+        
+.avisopng{
+    width: 2.5%;
+    margin-right: 4px;
+}
+
+.aviso{
+    color: rgb(20, 239, 0);
+    padding: 12px;
+    text-align: center;
+    margin: 0 0 0 30%;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 30%;
+}
+
+.btncopiar{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enc,.btn-des, .btn-enc:hover,.btn-des:hover, .btncopiar,.btncopiar:hover{
+    cursor: pointer;
+    position: relative;
+    border-style: none;
+    border-radius: 8px;
+    padding: 20px 20px;
+    font-weight: bold;
+    background-color: #42d404cc;
+    color: #ffffff;
+    border: 1px solid #42d404cc;
+    margin: 10px;
+    box-shadow: 1px 1px 20px 8px #42d404cc;
+}
+
+.btn-enc,.btn-des, .btncopiar{
+    background-color: transparent;
+    color: #42d404cc;
+    box-shadow: none;
+    
+}
+
+.btn-enc:hover::after,.btn-des:hover::after,.btncopiar:hover::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    box-shadow: 0px 0px 70px 20px #42d404cc;
+    transform: perspective(2em) rotateX(50deg) scale(1, 0.65);
+    filter: blur(1em);
+}
+.btncopiar{
+    position: relative;
+    left: 48%;
+    bottom: 77%;
+    display: none;
+}
+
+.salida{
+    position: relative;
+    box-shadow:inset 4px 2px 10px -2px  #01ff01b7, inset -4px -2px 10px #01ff01b7, 4px -4px 5px rgb(43, 255, 0), 
+                     -4px 2px 10px   #01ff01b7, 4px -2px 10px  #01ff01b7, -4px 4px 5px rgb(43, 255, 0);
+    border-radius: 10px;
+    width: 65%;
+    height: 90%;
+    margin: 0 10% 0 25%
+}
+
+.output{
+    width: 50%;
+
+}
+.areatextoresultado{
+    position: relative;
+    left: 27%;
+    border-color: rgb(71, 224, 6);
+    color: rgb(26, 255, 0);
+    background-color: rgba(47, 255, 0, 0.284);
+    box-shadow: inset 5px 5px 10px rgb(43, 255, 0), inset -5px -5px 10px #01ff01b7;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    resize: none;
+    display: none;
+    padding: 10px;
+    height: 48%;
+    width: 58%;
+    bottom: 88%;
+}
+
+::placeholder{ color: #47e006;}
+    .areatextoresultado:focus{
+        outline: none;
+}
+
+.espialogo{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    filter: brightness(2);
+    width: 40%;
+}
+
+.letrasimg{
+    position: absolute;
+    border-radius: 20px;
+    filter: brightness(1.2);
+    width: 100%;
+}
+
+.avisodesalida{
+    width: 100%;
+    text-align: center;
+    color: #04ff00;
+    position: relative;
+    top: 80%;
+}
+
+.avisodesalida h2{
+    font-size: 32px;  
+}
+
+ .avisodesalida p{
+     font-size: 16px;
+ }
+ 
+ footer{
+    position: absolute;
+    vertical-align: baseline;
+    padding: 10px;
+    background: linear-gradient(black,rgba(0, 255, 0, 0.211))
+
+ }
+ footer p{
+    text-align: center;
+    color: #0cff00;
+    font-size: 12px;
+    position: relative;
+ }
+.enlaces{
+    display: block;
+    text-align-last: center;
+}
+
+
+ #Linkedln{
+    width: 2%;
+    margin: 10px;
+    transition: 0.5s;
+    filter:brightness(4);
+ }
+
+ #Github{
+    width: 2%;
+    margin: 10px;
+    transition: 0.5s;
+    filter:brightness(4);
+ }
+
+ #Linkedln:hover {
+    width: 2.7%;
+    margin: 10px; 
+ 
+}
+ #Github:hover {
+    width: 2.7%;
+    margin: 10px; 
+
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .logoAl{
+        margin-left: 1%;
+        width: 4%;
+        margin-bottom: 6%;
+    }
+    .logoOr{
+        position: relative;
+        margin-bottom: 5%;
+        width: 18%;
+    }
+    
+    .logoCha{
+        position: relative;
+        width: 30%;
+        left: 40%;
+        margin-bottom: 5%;
+    }
+
+    main{
+        width: 74%;
+        height: 104vh;
+    }
+
+    .areatexto{
+        width: 230%;
+        position: relative;
+        right: 7%;
+        margin: none;
+        font-weight: bolder;
+        font-size: 18px;
+        padding: 10px;
+        left: 5%;
+    }
+    .aviso{
+        width: 212%;
+    }
+    .botones{
+        width: 212%;
+    }
+
+    .output{
+        position: absolute;
+        bottom: 34%;
+        width: 81.5%;
+        top: 86vh;
+    }
+    .salida{
+        position: relative;
+        box-shadow: inset 4px 2px 10px -2px #01ff01b7, inset -4px -2px 10px #01ff01b7, 4px -4px 5px rgb(43 255 0), -4px 2px 10px #01ff01b7, 4px -2px 10px #01ff01b7, -4px 4px 5px rgb(43 255 0);
+        border-radius: 10px;
+        width: 110%;
+        height: 37vh;
+        margin: 0px 0 0 6%;
+    }
+    .espialogo{
+        width: 20%;
+        top: 5%;
+        left: 40%;
+    }
+    .letrasimg {
+        filter: brightness(2);
+        height: 82%
+    }
+    .avisodesalida{
+        text-align: center;
+        color: #04ff00;
+        position: relative;
+        top: 69%;
+    }
+
+    .areatextoresultado {
+        width: 100%;
+        position: absolute;
+        top: 2vh;
+        left: 9%;
+        height: 22vh;
+    }
+
+    .btncopiar {
+        position: relative;
+        left: 54%;
+        bottom: 10vh;
+}
+}
+
+@media all and (max-width: 376px){
+    header h1{
+        font-size: 16px;
+    }
+
+    body{
+        height: 100%;
+    }
+    main{
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .logoAl{
+        margin-left: 5%;
+        width: 5%;
+        margin-bottom: 6%;
+    }
+    .logoOr{
+        margin-bottom: 7%;
+        width: 20%;
+    }
+    
+    .logoCha{
+        width: 35%;
+        left: 26%;
+        margin-bottom: 6%;
+    }
+
+    .areatexto{
+        width: 100%;
+        font-size: 18px;
+    }
+    .avisopng {
+        width: 15.5%;
+    }
+
+    .input{
+        width: 95%;
+    }
+
+    .output{
+        width: 45%;
+    }
+    .aviso{
+        width: 53%;
+    }
+    .botones{
+        width: 85%;
+    }
+    .salida{
+        height: 330px;
+        width: 302px;
+        right: 29%;
+        bottom: 30px;
+    }
+
+    .espialogo {
+        width: 40%;
+        top: 38%;
+        left: 29%;
+    }
+    .letrasimg{
+        filter: brightness(1.2);
+        width: 101%;
+        bottom: 18%;
+    }
+    .avisodesalida {
+        text-align: center;
+        
+        position: relative;
+        top: 77%;
+    }
+
+    .avisodesalida #noMessage{
+        font-size: 16px;
+        color: #04ff00;
+    }
+    .avisodesalida p{
+        font-size: 12px;
+        color: #04ff00;
+    }
+    .areatextoresultado{
+        position: absolute;
+        display: none;
+        width: 148.5%;
+        left: 29%;
+        top: -3vh;
+        height: 30vh;
+    }
+
+    .salida {
+        width: 170%;
+        left: 20%;
+    }
+
+    .btncopiar{
+        left: 75%;
+        bottom: 16vh;
+    }
+
+    #Linkedln{
+        width: 5%;
+        margin: 10px;
+        transition: 0.5s;
+        filter:brightness(4);
+     }
+    
+     #Github{
+        width: 5%;
+        margin: 10px;
+        transition: 0.5s;
+        filter:brightness(4);
+     }
+     #Linkedln:hover {
+        width: 5.7%;
+        margin: 10px; 
+     
+    }
+     #Github:hover {
+        width: 5.7%;
+        margin: 10px; 
+    
+    }
+
+}
+
+

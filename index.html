@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="images/Spy-PNG-Photo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/red-rose-light" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/Alura-Logo.png" alt="Logo Alura" class="logoAl">
+        <img src="images/OneNE-Logo.png" alt="Logo Oracle One" class="logoOr">
+        <img src="images/Logo-Challenges.png" alt="Logo de Oracle challenges" class="logoCha">
+        <div class="titulo">
+            <h1>   Encriptador/Desencriptador de textos     <span>&nbsp;</span></h1>
+        </div>
+        
+    </header>
+    <main>
+        <section class="input">
+            <textarea autofocus class="areatexto" id="textUser" cols="100" rows="12" placeholder="  Ingresa el texto..."></textarea>
+            <p class="aviso"><img src="images/Aviso-Logo.png" alt="Aviso" class="avisopng">Sólo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-enc" onclick="validarE()">Encriptar</button>
+                <button class="btn-des" onclick="validarD()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="output">
+                <div class="salida">
+                    <img class="espialogo" id="espialogo" src="images/LogoEspia.png" alt="Imagen de espia">
+                    <img class="letrasimg" id="letrasimg" src="images/binarioimg.png" alt="Imagen de numero binarios">
+                    <div class="avisodesalida">
+                        <h2 id="noMessage" >No hay mensaje</h2>
+                    <p id="insertMessage">Ingresa el texto que desesas encriptar o desencriptar</p>
+                    </div>
+                </div>
+                <textarea class="areatextoresultado" cols="10" rows="12" readonly> . . . </textarea>
+                <button class="btncopiar">Copiar</button>   
+        </section>
+    </main>
+    <footer>
+        <p>&copy Copyright 2023 Daniel Valle</p>
+        <div class="enlaces">
+            <a href="https://www.linkedin.com/in/danieljvg/" target="_blank"><img id=Linkedln src="images/LogoLinkedln.png" alt="Linkdeln"></a>
+            <a href="https://github.com/dannoo" target="_blank"><img id=Github src="images/LogoGitHub.png" alt="GitHub"></a>
+        </div>
+    </footer>
+<script src="js/script.js"></script>   
+</body>
+</html>
